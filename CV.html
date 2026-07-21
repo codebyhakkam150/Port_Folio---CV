@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Muhammed Hakkam - CV</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 35%, #0b1b39 100%);
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+    color: #0f172a;
+}
+
+/* Unique background overlay */
+body::before{
+    content: "";
+    position: fixed;
+    inset: 0;
+    background:
+        radial-gradient(circle at 10% 20%, rgba(56, 189, 248, 0.35) 0%, transparent 40%),
+        radial-gradient(circle at 90% 30%, rgba(99, 102, 241, 0.30) 0%, transparent 45%),
+        radial-gradient(circle at 40% 90%, rgba(34, 197, 94, 0.20) 0%, transparent 45%),
+        linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0));
+    pointer-events: none;
+    z-index: 0;
+}
+
+.cv{
+    position: relative;
+    z-index: 1;
+}
+
+.cv{
+    width:850px;
+    max-width:100%;
+    margin:30px auto;
+    background:rgb(255, 255, 255);
+    padding:40px;
+    box-shadow:0 0 15px #ccc;
+}
+
+
+/* Header */
+
+.header{
+    text-align:center;
+    border-bottom:3px solid #1e2a3a; 
+    padding-bottom:20px;
+}
+
+.header h1{
+    color:#212731;
+    font-size:35px;
+}
+
+.header p{
+    margin-top:10px;
+    font-size:16px;
+    word-wrap:break-word;
+}
+
+
+/* Sections */
+
+.section{
+    margin-top:25px;
+}
+
+.section h2{
+    color:#212731;
+    border-bottom:2px solid #212731;
+    padding-bottom:5px;
+    margin-bottom:10px;
+}
+
+
+.section p,
+.section li{
+    line-height:1.7;
+    font-size:15px;
+}
+
+
+ul{
+    margin-left:20px;
+}
+
+
+/* Skills */
+
+.skills{
+    display:flex;
+    gap:40px;
+}
+
+.skills ul{
+    flex:1;
+}
+
+
+/* Project */
+
+.project{
+    margin-bottom:15px;
+}
+
+.project h3{
+    color:#0b1b39;
+}
+
+
+.footer{
+    margin-top:30px;
+    text-align:center;
+    font-size:14px;
+}
+
+
+/* ===== Mobile Responsive ===== */
+
+@media (max-width: 900px){
+    .cv{
+        width:95%;
+        margin:20px auto;
+        padding:25px;
+    }
+}
+
+@media (max-width: 600px){
+
+    body{
+        overflow-x:hidden;
+    }
+
+    .cv{
+        width:100%;
+        margin:0 auto;
+        padding:20px 16px;
+        box-shadow:none;
+    }
+
+    .header h1{
+        font-size:26px;
+    }
+
+    .header p{
+        font-size:14px;
+    }
+
+    .section h2{
+        font-size:19px;
+    }
+
+    .section p,
+    .section li{
+        font-size:14px;
+        line-height:1.6;
+    }
+
+    ul{
+        margin-left:16px;
+    }
+
+    /* Stack skills columns on small screens */
+    .skills{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    .project h3{
+        font-size:16px;
+    }
+
+    .footer{
+        font-size:12px;
+    }
+}
+
+@media (max-width: 400px){
+    .header h1{
+        font-size:22px;
+    }
+
+    .cv{
+        padding:16px 12px;
+    }
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="cv">
+
+
+<div class="header">
+
+<h1>Muhammed Hakkam</h1>
+
+<p>
+HND IT Student | Web Developer | Future QA Engineer
+</p>
+
+<p>
+📍 Sri Lanka |
+📧 hakkam1100@gmail.com |
+📞 0765 322 150
+</p>
+
+<p>
+LinkedIn: <a href="https://www.linkedin.com/in/muhammed-hakkam-310356359?utm_source=share_via&utm_content=profile&utm_medium=member_ios " class="btn btn-ghost" target="_blank" rel="noopener">LinkedIn</a>
+</p>
+</div>
+
+<div class="section">
+
+<h2>Career Objective</h2>
+
+<p>
+    Motivated HND Information Technology student with a strong interest in Web Development, Programming, and  Quality Assurance. 
+    Passionate about learning new technologies and applying technical skills to create efficient and innovative digital solutions. 
+    Seeking an opportunity to enhance my skills and contribute to a dynamic IT environment.
+</p>
+
+</div>
+
+
+
+
+<div class="section">
+
+<h2>Education</h2>
+
+<ul>
+
+<li>
+<b>Higher National Diploma in Information Technology (HND IT)</b><br>
+ATI - SLIATE, Sri Lanka<br>
+Present
+</li>
+
+<br>
+
+<li>
+<b>G.C.E Advanced Level (A/L)</b><br>
+<br>
+Stream: (Arts)<br>
+Results: (2C ,S)
+</li>
+
+<br>
+
+<li>
+<b>G.C.E Ordinary Level (O/L)</b><br>
+<br>
+Results: (3C , 3S)
+</li>
+
+<br>
+
+<li>
+<b>Certifications</b><br>
+-  Ai Skill Fest <br>
+- Web Development Certificate<br>
+- ICT Technician NVQ Level 04<br>
+- Computer Hardware Technician Certificate<br>
+- Diploma in English
+</li>
+
+</ul>
+
+</div>
+
+
+
+
+<div class="section">
+
+<h2>Technical Skills</h2>
+
+
+<div class="skills">
+
+<ul>
+<li>HTML</li>
+<li>CSS</li>
+<li>JavaScript</li>
+<li>PHP</li>
+<li>Java</li>
+<li>C#</li>
+</ul>
+
+
+<ul>
+<li>MySQL</li>
+<li>Figma</li>
+<li>Visual Studio</li>
+<li>VS Code</li>
+<li>XAMPP</li>
+<li>Git/GitHub</li>
+</ul>
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+<div class="section">
+
+<h2>Projects</h2>
+
+
+<div class="project">
+
+<h3>Online Cake Ordering System</h3>
+
+<p>
+Developed a web-based cake ordering system using HTML,
+CSS, JavaScript, PHP and MySQL with login, registration
+and product management features.
+</p>
+
+</div>
+
+
+
+<div class="project">
+
+<h3>Lost & Found Item Tracking System</h3>
+
+<p>
+Created a system to report, search and manage lost items
+with database integration and user-friendly interface.
+</p>
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+<div class="section">
+
+<h2>Soft Skills</h2>
+
+<ul>
+
+<li>Problem Solving</li>
+<li>Team Work</li>
+<li>Communication Skills</li>
+<li>Time Management</li>
+<li>Leadership</li>
+
+</ul>
+
+</div>
+
+
+
+
+
+
+<div class="section">
+
+<h2>Languages</h2>
+
+<ul>
+
+<li>Tamil - Native</li>
+<li>English - Intermediate</li>
+<li>Sinhala - Basic</li>
+
+</ul>
+
+</div>
+
+
+
+
+<div class="section">
+
+<h2>Achievements & Activities</h2>
+
+<ul>
+
+<li>Founder of Haksiya Innovations</li>
+<li>Web Development Projects</li>
+
+</ul>
+
+</div>
+
+
+
+
+<div class="footer">
+
+<p>References available upon request</p>
+
+</div>
+
+
+
+</div>
+
+
+</body>
+</html>
