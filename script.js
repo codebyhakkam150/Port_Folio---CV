@@ -1,15 +1,4 @@
-// ===== Typing code animation in hero editor =====
-const codeLines = [
-  { indent: 0, html: '<span class="key">const</span> hakkam = {' },
-  { indent: 1, html: '<span class="key">role</span>: <span class="str">"HND IT Student"</span>,' },
-  { indent: 1, html: '<span class="key">focus</span>: <span class="str">"Quality Assurance (QA) | Web Development."</span>,' },
-  { indent: 1, html: '<span class="key">stack</span>: [<span class="str">"HTML"</span>, <span class="str">"CSS"</span>, <span class="str">"JavaScript"</span>],' },
-  { indent: 1, html: '<span class="key">learning</span>: <span class="str">true</span>,' },
-  { indent: 1, html: '<span class="key">status</span>: <span class="str">"open to opportunities"</span>' },
-  { indent: 0, html: '};' },
-  { indent: 0, html: '' },
-  { indent: 0, html: '<span class="comment">// let\'s build something together</span>' },
-];
+
 
 function renderGutterAndCode() {
   const gutter = document.getElementById('gutter');
