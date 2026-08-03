@@ -552,7 +552,7 @@ p{ margin: 0 0 1em; }
 
 .commit{
     display:flex;
-    gap:20px;
+    gap:10px;
     padding:20px 0;
     border-left:2px solid var(--border);
     padding-left:30px;
