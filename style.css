@@ -145,8 +145,8 @@ p{ margin: 0 0 1em; }
 .preview-label{ font-family: var(--font-mono); font-size:0.78rem; color: var(--text-muted); }
 .preview-url{ font-family: var(--font-mono); font-size:0.72rem; color: var(--text-muted); background: var(--bg); padding:3px 10px; border-radius:20px; border:1px solid var(--border); }
 .preview-body{ padding: 32px 28px; display:flex; flex-direction:column; justify-content:center; flex:1; }
-.hero-visual{ margin-bottom: 20px; border: 1px solid var(--border); border-radius: 16px; overflow: hidden; background: linear-gradient(135deg, rgba(124,140,255,0.12), rgba(45,212,191,0.08)); box-shadow: 0 15px 35px rgba(0,0,0,0.18); }
-.hero-visual img{ width:100%; display:block; max-height: 260px; object-fit: cover; }
+.hero-visual{ margin-bottom: 20px; border: 1px solid var(--border); border-radius: 16px; overflow: hidden; background: linear-gradient(135deg, rgba(124,140,255,0.12), rgba(45,212,191,0.08)); box-shadow: 0 15px 35px rgba(0,0,0,0.18); max-width: 320px; margin-left: auto; margin-right: auto; }
+.hero-visual img{ width: 100%; display:block; height: auto; max-height: 320px; object-fit: cover; object-position: center; border-radius: 14px; }
 .preview-body h1{ font-size: clamp(2rem, 4vw, 2.8rem); margin: 2px 0 6px; }
 .role{ font-family: var(--font-mono); color: var(--accent); font-size: 0.95rem; margin-bottom: 16px; }
 .hero-sub{ color: var(--text-muted); font-size: 0.96rem; }
@@ -319,6 +319,29 @@ p{ margin: 0 0 1em; }
 
 .projects h4{
     font-size:2.5rem;
+}
+
+.hero-visual{
+    max-width: 260px;
+}
+
+.hero-visual img{
+    max-height: 260px;
+}
+
+}
+
+@media (max-width:600px){
+    .preview-body{ padding: 24px 18px; }
+
+    .hero-visual{
+        max-width: 220px;
+        border-radius: 12px;
+    }
+
+    .hero-visual img{
+        max-height: 220px;
+    }
 }
 
 }
