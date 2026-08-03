@@ -60,6 +60,16 @@ body::before{
     padding-bottom:20px;
 }
 
+.profile-photo{
+    width:140px;
+    height:140px;
+    border-radius:50%;
+    object-fit:cover;
+    border:4px solid #1e2a3a;
+    box-shadow:0 4px 12px rgba(0,0,0,0.2);
+    margin-bottom:15px;
+}
+
 .header h1{
     color:#212731;
     font-size:35px;
@@ -84,7 +94,6 @@ body::before{
     padding-bottom:5px;
     margin-bottom:10px;
 }
-
 
 .section p,
 .section li{
@@ -151,15 +160,20 @@ ul{
         box-shadow:none;
     }
 
-    .header h1{
+        .header h1{
         font-size:26px;
+    }
+
+    .profile-photo{
+        width:110px;
+        height:110px;
     }
 
     .header p{
         font-size:14px;
     }
 
-    .section h2{
+.section h2{
         font-size:19px;
     }
 
@@ -189,8 +203,13 @@ ul{
 }
 
 @media (max-width: 400px){
-    .header h1{
+        .header h1{
         font-size:22px;
+    }
+
+    .profile-photo{
+        width:90px;
+        height:90px;
     }
 
     .cv{
@@ -211,7 +230,9 @@ ul{
 
 <div class="header">
 
-<h1>Muhammed Hakkam</h1>
+        <img src="Hakkam.jpeg" alt="Muhammed Hakkam" class="profile-photo">
+
+        <h1>Muhammed Hakkam</h1>
 
 <p>
 HND IT Student | Web Developer | Future QA Engineer
@@ -276,7 +297,7 @@ Muslim Madhiya Maha Vidyalaya Sammanthurai
 
 <li>
 <b>Certifications</b><br>
--  Ai Skill Fest <br>
+- Microsoft Ai Skill Fest <br>
 - Web Development Certificate<br>
 - ICT Technician NVQ Level 04<br>
 - Computer Hardware Technician Certificate<br>
