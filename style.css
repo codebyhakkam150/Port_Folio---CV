@@ -32,7 +32,7 @@ h1,h2,h3{ font-family: var(--font-display); margin: 0; letter-spacing: -0.02em; 
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    min-height: 100vh;
+    min-height: 200vh;
     padding-top: 30px; /* மேலிருந்து எவ்வளவு gap வேண்டும் என்று மாற்றிக்கொள்ளலாம் */
 }
 p{ margin: 0 0 1em; }
@@ -552,7 +552,7 @@ p{ margin: 0 0 1em; }
 
 .commit{
     display:flex;
-    gap:10px;
+    gap:20px;
     padding:20px 0;
     border-left:2px solid var(--border);
     padding-left:30px;
