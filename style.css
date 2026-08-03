@@ -68,10 +68,32 @@ p{ margin: 0 0 1em; }
 }
 
 .tabbar-logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
     font-family: var(--font-mono);
     font-weight: 600;
     color: var(--accent);
     flex-shrink: 0;
+    transition: color .2s;
+}
+
+.tabbar-logo:hover{
+    color: var(--text);
+}
+
+.logo-img{
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    object-fit: cover;
+    border: 1px solid var(--border);
+}
+
+.logo-text{
+    font-size: 0.92rem;
+    white-space: nowrap;
 }
 
 .tabs{
