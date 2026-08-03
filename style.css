@@ -27,6 +27,14 @@ body{ margin:0; background: var(--bg); color: var(--text); font-family: var(--fo
 
 a{ color: inherit; }
 h1,h2,h3{ font-family: var(--font-display); margin: 0; letter-spacing: -0.02em; }
+
+.container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding-top: 30px; /* மேலிருந்து எவ்வளவு gap வேண்டும் என்று மாற்றிக்கொள்ளலாம் */
+}
 p{ margin: 0 0 1em; }
 .section-inner{ max-width: var(--max-w); margin: 0 auto; padding: 88px 24px; }
 .eyebrow{ font-family: var(--font-mono); color: var(--accent-2); font-size: 0.8rem; margin: 0 0 12px; }
