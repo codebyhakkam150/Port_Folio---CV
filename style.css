@@ -141,7 +141,7 @@ p{ margin: 0 0 1em; }
     max-width: var(--max-w);
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1.05fr 1fr;
+    grid-template-columns: 1fr 1fr;   /* இத மட்டும் change */
     gap: 28px;
     align-items: start;
 }
@@ -154,7 +154,7 @@ p{ margin: 0 0 1em; }
 
 .code-editor {
     width: 100%;
-    max-width: 800px;
+    /* max-width: 800px; */
     height: fit-content;
     min-height: 220px;
     padding: 20px;
