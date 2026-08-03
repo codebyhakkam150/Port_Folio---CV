@@ -135,7 +135,7 @@ p{ margin: 0 0 1em; }
 .menu-toggle span{ width:20px; height:2px; background: var(--text); border-radius:2px; }
 
 /* ===== Hero split editor/preview ===== */
-.hero{ min-height: 100vh; display:flex; align-items:center; padding: 100px 24px 60px;
+.hero{ min-height: 100vh; display:flex; align-items:start; padding: 100px 24px 60px;
   background: radial-gradient(ellipse at 80% 10%, rgba(124,140,255,0.09), transparent 55%), var(--bg); }
 .hero-inner{
     max-width: var(--max-w);
