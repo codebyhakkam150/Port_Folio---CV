@@ -136,9 +136,9 @@ p{ margin: 0 0 1em; }
 .editor-bar .dot{ width:10px; height:10px; border-radius:50%; }
 .dot.red{ background:#f85149; } .dot.yellow{ background:#e9a23b; } .dot.green{ background:#2dd4bf; }
 .editor-filename{ margin-left:8px; font-family: var(--font-mono); font-size:0.78rem; color: var(--text-muted); }
-.editor-body{ display:flex; font-family: var(--font-mono); font-size: 0.82rem; padding: 18px 0; flex:1; min-height: 340px; }
-.gutter{ padding: 0 12px 0 18px; color: #4A5568; text-align:right; user-select:none; line-height: 1.65; white-space:pre; }
-.code{ margin:0; padding: 0 18px 0 6px; white-space: pre-wrap; line-height: 1.65; flex:1; }
+.editor-body{ display:flex; font-family: var(--font-mono); font-size: 0.72rem; padding: 14px 0; flex:1; min-height: 300px; }
+.gutter{ padding: 0 12px 0 18px; color: #4A5568; text-align:right; user-select:none; line-height: 1.5; white-space:pre; }
+.code{ margin:0; padding: 0 18px 0 6px; white-space: pre-wrap; line-height: 1.5; flex:1; }
 .code .key{ color: #7C8CFF; } .code .str{ color: #2DD4BF; } .code .punct{ color: var(--text-muted); } .code .comment{ color:#5c6474; }
 
 .preview-bar{ justify-content: space-between; }
