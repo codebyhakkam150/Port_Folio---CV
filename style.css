@@ -129,14 +129,25 @@ p{ margin: 0 0 1em; }
 /* ===== Hero split editor/preview ===== */
 .hero{ min-height: 100vh; display:flex; align-items:center; padding: 100px 24px 60px;
   background: radial-gradient(ellipse at 80% 10%, rgba(124,140,255,0.09), transparent 55%), var(--bg); }
-.hero-inner{ max-width: var(--max-w); margin:0 auto; display:grid; grid-template-columns: 1.05fr 1fr; gap: 28px; align-items: stretch; }
+.hero-inner{ max-width: var(--max-w); margin:0 auto; display:grid; grid-template-columns: 1.05fr 1fr; gap: 28px; align-items: center; }
 
 .editor-pane, .preview-pane{ background: var(--surface); border:1px solid var(--border); border-radius: var(--radius); overflow:hidden; box-shadow: 0 20px 50px rgba(0,0,0,0.35); display:flex; flex-direction:column; }
 .editor-bar, .preview-bar{ display:flex; align-items:center; gap:8px; padding: 12px 16px; background: var(--surface-2); border-bottom: 1px solid var(--border); }
 .editor-bar .dot{ width:10px; height:10px; border-radius:50%; }
 .dot.red{ background:#f85149; } .dot.yellow{ background:#e9a23b; } .dot.green{ background:#2dd4bf; }
 .editor-filename{ margin-left:8px; font-family: var(--font-mono); font-size:0.78rem; color: var(--text-muted); }
-.editor-body{ display:flex; font-family: var(--font-mono); font-size: 0.72rem; padding: 14px 0; flex:1; min-height: 300px; }
+
+.code-editor {
+    width: 100%;
+    max-width: 800px;
+    height: fit-content;
+    min-height: 220px;
+    padding: 20px;
+    overflow: auto;
+    border-radius: 12px;
+    background: #111827;
+}
+.editor-body{ display:flex; font-family: var(--font-mono); font-size: 0.72rem; padding: 14px 0; }
 .gutter{ padding: 0 12px 0 18px; color: #4A5568; text-align:right; user-select:none; line-height: 1.5; white-space:pre; }
 .code{ margin:0; padding: 0 18px 0 6px; white-space: pre-wrap; line-height: 1.5; flex:1; }
 .code .key{ color: #7C8CFF; } .code .str{ color: #2DD4BF; } .code .punct{ color: var(--text-muted); } .code .comment{ color:#5c6474; }
@@ -339,11 +350,9 @@ p{ margin: 0 0 1em; }
         border-radius: 12px;
     }
 
-    .hero-visual img{
+.hero-visual img{
         height: auto;
     }
-}
-
 }
 
 /* Matches index.html: .browser / .browser-left */
