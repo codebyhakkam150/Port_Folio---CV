@@ -1,454 +1,481 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="icon" type="image/png" href="Logo.jpg">
+
 <title>Muhammed Hakkam - CV</title>
 
 <style>
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family: Arial, sans-serif;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-body{
-    background: linear-gradient(135deg, #0f172a 0%, #1e293b 35%, #0b1b39 100%);
-    min-height: 100vh;
-    position: relative;
-    overflow-x: hidden;
-    color: #0f172a;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f2f4f7;
+    color: #222;
+    line-height: 1.5;
 }
 
-/* Unique background overlay */
-body::before{
-    content: "";
-    position: fixed;
-    inset: 0;
-    background:
-        radial-gradient(circle at 10% 20%, rgba(56, 189, 248, 0.35) 0%, transparent 40%),
-        radial-gradient(circle at 90% 30%, rgba(99, 102, 241, 0.30) 0%, transparent 45%),
-        radial-gradient(circle at 40% 90%, rgba(34, 197, 94, 0.20) 0%, transparent 45%),
-        linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0));
-    pointer-events: none;
-    z-index: 0;
+.cv {
+    width: 210mm;
+    min-height: 297mm;
+    margin: 25px auto;
+    background: white;
+    padding: 15mm 18mm;
+    box-shadow: 0 0 15px rgba(0,0,0,0.10);
 }
 
-.cv{
-    position: relative;
-    z-index: 1;
+/* ================= HEADER ================= */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #1e40af;
+    padding-bottom: 12px;
 }
 
-.cv{
-    width:850px;
-    max-width:100%;
-    margin:30px auto;
-    background:rgb(255, 255, 255);
-    padding:40px;
-    box-shadow:0 0 15px #ccc;
+.header-left {
+    flex: 1;
 }
 
-
-/* Header */
-
-.header{
-    text-align:center;
-    border-bottom:3px solid #1e2a3a; 
-    padding-bottom:20px;
+.header-left h1 {
+    font-size: 28px;
+    margin-bottom: 5px;
+    color: #111;
 }
 
-.profile-photo{
-    width:180px;
-    height:180px;
-    border-radius:50%;
-    object-fit:cover;
-    border:4px solid #1e2a3a;
-    box-shadow:0 4px 12px rgba(0,0,0,0.2);
-    margin-bottom:15px;
+.contact {
+    font-size: 13px;
+    line-height: 1.7;
 }
 
-.header h1{
-    color:#212731;
-    font-size:35px;
+.contact a {
+    color: #2563eb;
+    text-decoration: none;
 }
 
-.header p{
-    margin-top:10px;
-    font-size:16px;
-    word-wrap:break-word;
+.contact a:hover {
+    text-decoration: underline;
 }
 
+/* ================= QR CODES ================= */
 
-/* Sections */
-
-.section{
-    margin-top:25px;
+.qr-section {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
 }
 
-.section h2{
-    color:#212731;
-    border-bottom:2px solid #212731;
-    padding-bottom:5px;
-    margin-bottom:10px;
+.qr-box {
+    width: 75px;
+    text-align: center;
 }
 
-.section p,
-.section li{
-    line-height:1.7;
-    font-size:15px;
+.qr-box img {
+    width: 65px;
+    height: 65px;
+    display: block;
+    margin: 0 auto 4px;
 }
 
-
-ul{
-    margin-left:20px;
+.qr-box span {
+    font-size: 10px;
+    font-weight: bold;
+    color: #222;
 }
 
+/* ================= SECTIONS ================= */
 
-/* Skills */
-
-.skills{
-    display:flex;
-    gap:40px;
+.section {
+    margin-top: 18px;
 }
 
-.skills ul{
-    flex:1;
+.section h2 {
+    font-size: 16px;
+    color: #1e40af;
+    border-bottom: 2px solid #1e40af;
+    padding-bottom: 4px;
+    margin-bottom: 8px;
 }
 
+/* ================= TEXT ================= */
 
-/* Project */
-
-.project{
-    margin-bottom:15px;
+p {
+    font-size: 13px;
+    margin-bottom: 4px;
 }
 
-.project h3{
-    color:#0b1b39;
+ul {
+    margin-left: 20px;
+    margin-top: 4px;
 }
 
-
-.footer{
-    margin-top:30px;
-    text-align:center;
-    font-size:14px;
+li {
+    font-size: 13px;
+    margin-bottom: 3px;
 }
 
+/* ================= PROJECTS ================= */
 
-/* ===== Mobile Responsive ===== */
-
-@media (max-width: 900px){
-    .cv{
-        width:95%;
-        margin:20px auto;
-        padding:25px;
-    }
+.project {
+    margin-bottom: 12px;
 }
 
-@media (max-width: 600px){
+.project-title {
+    font-weight: bold;
+    font-size: 13.5px;
+}
 
-    body{
-        overflow-x:hidden;
-    }
+.github {
+    font-size: 11.5px;
+    margin: 2px 0 4px;
+}
 
-    .cv{
-        width:100%;
-        margin:0 auto;
-        padding:20px 16px;
-        box-shadow:none;
+.github a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+/* ================= PRINT ================= */
+
+@media print {
+
+    @page {
+        size: A4;
+        margin: 0;
     }
 
-        .header h1{
-        font-size:26px;
+    body {
+        background: white;
     }
 
-    .profile-photo{
-        width:110px;
-        height:110px;
+    .cv {
+        width: 210mm;
+        min-height: 297mm;
+        margin: 0;
+        padding: 15mm 18mm;
+        box-shadow: none;
     }
 
-    .header p{
-        font-size:14px;
-    }
-
-.section h2{
-        font-size:19px;
-    }
-
-    .section p,
-    .section li{
-        font-size:14px;
-        line-height:1.6;
-    }
-
-    ul{
-        margin-left:16px;
-    }
-
-    /* Stack skills columns on small screens */
-    .skills{
-        flex-direction:column;
-        gap:10px;
-    }
-
-    .project h3{
-        font-size:16px;
-    }
-
-    .footer{
-        font-size:12px;
-    }
 }
 
-@media (max-width: 400px){
-        .header h1{
-        font-size:22px;
+/* ================= MOBILE ================= */
+
+@media (max-width: 700px) {
+
+    .cv {
+        width: 100%;
+        min-height: auto;
+        margin: 0;
+        padding: 25px;
     }
 
-    .profile-photo{
-        width:90px;
-        height:90px;
+    .header {
+        align-items: flex-start;
     }
 
-    .cv{
-        padding:16px 12px;
+    .header-left h1 {
+        font-size: 24px;
     }
+
+    .qr-section {
+        gap: 5px;
+        margin-left: 10px;
+    }
+
+    .qr-box {
+        width: 55px;
+    }
+
+    .qr-box img {
+        width: 50px;
+        height: 50px;
+    }
+
 }
 
 </style>
-
 </head>
-
 
 <body>
 
-
 <div class="cv">
 
+    <!-- ================= HEADER ================= -->
 
-<div class="header">
+    <div class="header">
 
-        <img src="Hakkam.jpeg" alt="Muhammed Hakkam" class="profile-photo">
+        <div class="header-left">
 
-        <h1>Muhammed Hakkam</h1>
+            <h1>Muhammed Hakkam</h1>
 
-<p>
-HND IT Student | Web Developer | Future QA Engineer
-</p>
+            <div class="contact">
 
-<p>
-📍 Sri Lanka |
-📧 hakkam1100@gmail.com |
-📞 0765 322 150
-</p>
+                Sammanthurai, Sri Lanka |
+                0765 322 150 |
+                hakkam1100@gmail.com
 
-<p>
-LinkedIn: <a href="https://www.linkedin.com/in/hakkam-espeek-310356359/" class="btn btn-ghost" target="_blank" rel="noopener">LinkedIn</a>
-</p>
+                <br>
+
+                <strong>GitHub:</strong>
+                <a href="https://github.com/codebyhakkam150"
+                   target="_blank">
+                    github.com/codebyhakkam150
+                </a>
+
+                |
+
+                <strong>LinkedIn:</strong>
+                <a href="https://www.linkedin.com/in/muhammed-hakkam"
+                   target="_blank">
+                    linkedin.com/in/muhammed-hakkam
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- QR CODES -->
+
+        <div class="qr-section">
+
+            <!-- GitHub QR -->
+
+            <div class="qr-box">
+
+                <img
+                    src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://github.com/codebyhakkam150"
+                    alt="GitHub QR Code">
+
+                <span>GitHub</span>
+
+            </div>
+
+
+            <!-- LinkedIn QR -->
+
+            <div class="qr-box">
+
+                <img
+                    src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.linkedin.com/in/muhammed-hakkam"
+                    alt="LinkedIn QR Code">
+
+                <span>LinkedIn</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= PROFILE ================= -->
+
+    <div class="section">
+
+        <h2>PROFILE</h2>
+
+        <p>
+            Motivated HND Information Technology student with a strong
+            interest in Web Development, Programming, and Quality Assurance.
+            Skilled in building web-based applications using HTML, CSS,
+            JavaScript, PHP, and MySQL, with experience in database-integrated
+            projects. Seeking an opportunity to develop technical skills and
+            contribute to a dynamic IT environment.
+        </p>
+
+    </div>
+
+
+    <!-- ================= EDUCATION ================= -->
+
+    <div class="section">
+
+        <h2>EDUCATION</h2>
+
+        <p>
+            <strong>
+                Higher National Diploma in Information Technology (HND IT)
+            </strong>
+            — Present
+        </p>
+
+        <p>
+            ATI – SLIATE, Sri Lanka
+        </p>
+
+        <p>
+            <strong>Core Modules:</strong>
+            System Analysis & Design |
+            Database Management |
+            Programming |
+            Web Development |
+            Software Engineering |
+            Networking Fundamentals
+        </p>
+
+    </div>
+
+
+    <!-- ================= PROJECTS ================= -->
+
+    <div class="section">
+
+        <h2>PROJECTS</h2>
+
+
+        <!-- Project 01 -->
+
+        <div class="project">
+
+            <div class="project-title">
+
+                Online Cake Ordering System
+                — HTML, CSS, JavaScript, PHP, MySQL
+
+            </div>
+
+            <div class="github">
+
+                GitHub:
+
+                <a href="https://github.com/codebyhakkam150"
+                   target="_blank">
+
+                    github.com/codebyhakkam150
+
+                </a>
+
+            </div>
+
+            <ul>
+
+                <li>
+                    Developed a web-based cake ordering system with login,
+                    registration, and product management features to simplify
+                    online cake ordering.
+                </li>
+
+                <li>
+                    Implemented a database-integrated solution using PHP and
+                    MySQL, with HTML, CSS, and JavaScript for the user
+                    interface.
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- Project 02 -->
+
+        <div class="project">
+
+            <div class="project-title">
+
+                Lost & Found Item Tracking System
+                — HTML, CSS, JavaScript, PHP, MySQL
+
+            </div>
+
+            <div class="github">
+
+                GitHub:
+
+                <a href="https://github.com/codebyhakkam150"
+                   target="_blank">
+
+                    github.com/codebyhakkam150
+
+                </a>
+
+            </div>
+
+            <ul>
+
+                <li>
+                    Created a system to report, search, and manage lost items,
+                    helping users track and recover missing belongings
+                    efficiently.
+                </li>
+
+                <li>
+                    Integrated a MySQL database with a user-friendly web
+                    interface for storing and retrieving lost-and-found item
+                    information.
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= TECHNICAL SKILLS ================= -->
+
+    <div class="section">
+
+        <h2>TECHNICAL SKILLS</h2>
+
+        <p>
+            <strong>Languages:</strong>
+            HTML, CSS, JavaScript, PHP, Java, C#
+        </p>
+
+        <p>
+            <strong>Web & Database:</strong>
+            Web Development, MySQL
+        </p>
+
+        <p>
+            <strong>Tools:</strong>
+            Figma, Visual Studio, VS Code, XAMPP, Git/GitHub
+        </p>
+
+        <p>
+            <strong>Core CS:</strong>
+            Programming Fundamentals, Database Management,
+            System Analysis & Design, Networking Fundamentals
+        </p>
+
+    </div>
+
+
+    <!-- ================= EXPERIENCE ================= -->
+
+    <div class="section">
+
+        <h2>LEADERSHIP & COMMUNITY EXPERIENCE</h2>
+
+        <p>
+            <strong>Founder – Haksiya Innovations</strong>
+        </p>
+
+        <ul>
+
+            <li>
+                Founded Haksiya Innovations and worked on web development
+                and digital projects, applying technical and design skills
+                to create digital solutions.
+            </li>
+
+        </ul>
+
+    </div>
+
 </div>
-
-<div class="section">
-
-<h2>Career Objective</h2>
-
-<p>
-    Motivated HND Information Technology student with a strong interest in Web Development, Programming, and  Quality Assurance. 
-    Passionate about learning new technologies and applying technical skills to create efficient and innovative digital solutions. 
-    Seeking an opportunity to enhance my skills and contribute to a dynamic IT environment.
-</p>
-
-</div>
-
-
-
-
-<div class="section">
-
-<h2>Education</h2>
-
-<ul>
-
-<li>
-<b>Higher National Diploma in Information Technology (HND IT)</b><br>
-ATI - SLIATE, Sri Lanka<br>
-Present
-</li>
-
-<br>
-
-<li>
-<b>G.C.E Advanced Level (A/L)</b><br>
-<br>
-Stream: (Arts)<br>
-Muslim Madhiya Maha Vidyalaya Sammanthurai
-</li>
-
-<br>
-
-<li>
-<b>G.C.E Ordinary Level (O/L)</b><br>
-<br>
-Muslim Madhiya Maha Vidyalaya Sammanthurai
-</li>
-
-<br>
-
-<li>
-<b>Certifications</b><br>
-- Microsoft Ai Skill Fest <br>
-- Web Development Certificate<br>
-- ICT Technician NVQ Level 04<br>
-- Computer Hardware Technician Certificate<br>
-- Diploma in English
-</li>
-
-</ul>
-
-</div>
-
-
-
-
-<div class="section">
-
-<h2>Technical Skills</h2>
-
-
-<div class="skills">
-
-<ul>
-<li>HTML</li>
-<li>CSS</li>
-<li>JavaScript</li>
-<li>PHP</li>
-<li>Java</li>
-<li>C#</li>
-</ul>
-
-
-<ul>
-<li>MySQL</li>
-<li>Figma</li>
-<li>Visual Studio</li>
-<li>VS Code</li>
-<li>XAMPP</li>
-<li>Git/GitHub</li>
-</ul>
-
-
-</div>
-
-</div>
-
-
-
-
-
-
-<div class="section">
-
-<h2>Projects</h2>
-
-
-<div class="project">
-
-<h3>Online Cake Ordering System</h3>
-
-<p>
-Developed a web-based cake ordering system using HTML,
-CSS, JavaScript, PHP and MySQL with login, registration
-and product management features.
-</p>
-
-</div>
-
-
-
-<div class="project">
-
-<h3>Lost & Found Item Tracking System</h3>
-
-<p>
-Created a system to report, search and manage lost items
-with database integration and user-friendly interface.
-</p>
-
-</div>
-
-
-</div>
-
-
-
-
-
-
-<div class="section">
-
-<h2>Soft Skills</h2>
-
-<ul>
-
-<li>Problem Solving</li>
-<li>Team Work</li>
-<li>Communication Skills</li>
-<li>Time Management</li>
-<li>Leadership</li>
-
-</ul>
-
-</div>
-
-
-
-
-
-
-<div class="section">
-
-<h2>Languages</h2>
-
-<ul>
-
-<li>Tamil - Native</li>
-<li>English - Intermediate</li>
-<li>Sinhala - Basic</li>
-
-</ul>
-
-</div>
-
-
-
-
-<div class="section">
-
-<h2>Achievements & Activities</h2>
-
-<ul>
-
-<li>Founder of Haksiya Innovations</li>
-<li>Web Development Projects</li>
-
-</ul>
-
-</div>
-
-
-
-
-<div class="footer">
-
-<!--<p>References available upon request</p>-->
-
-</div>
-
-
-
-</div>
-
 
 </body>
 </html>
+```
