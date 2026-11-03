@@ -180,24 +180,41 @@ li {
 
     .header {
         align-items: flex-start;
+        gap: 8px;
+    }
+
+    .header-left {
+        flex: 1;
+        min-width: 0;
+        text-align: left;
     }
 
     .header-left h1 {
-        font-size: 24px;
+        font-size: 17px;
+    }
+
+    .contact {
+        font-size: 11px;
+        overflow-wrap: anywhere;
     }
 
     .qr-section {
-        gap: 5px;
-        margin-left: 10px;
+        flex-shrink: 0;
+        gap: 4px;
+        margin-left: 0;
     }
 
     .qr-box {
-        width: 55px;
+        width: 54px;
     }
 
     .qr-box img {
         width: 50px;
         height: 50px;
+    }
+
+    .qr-box span {
+        font-size: 9px;
     }
 
 }
@@ -220,8 +237,8 @@ li {
             <div class="contact">
 
                 Sammanthurai, Sri Lanka |
-                0765 322 150 |
-                hakkam1100@gmail.com
+                0765 322 150 
+                <a href="mailto:hakkam1100@gmail.com">hakkam1100@gmail.com</a>
 
                 <br>
 
@@ -231,7 +248,8 @@ li {
                     github.com/codebyhakkam150
                 </a>
 
-                |
+                
+                <br>
 
                 <strong>LinkedIn:</strong>
                 <a href="https://www.linkedin.com/in/hakkam-espeek-310356359/"
@@ -285,10 +303,9 @@ li {
         <h2>PROFILE</h2>
 
            <p class="profile-text">
-               Motivated HND Information Technology student with a strong interest in Web Development, Programming, and Quality Assurance. Skilled in building web-based applications using HTML, CSS, JavaScript, PHP, and MySQL, with experience in database-integrated projects. Seeking an opportunity to develop technical skills and contribute to a dynamic IT environment.
+               Motivated HND Information Technology student with a strong interest in Web Development, Programming, and Quality Assurance. Skilled in building web-based applications using HTML, CSS, JavScript, PHP, and MySQL, with experience in database-integrated projects. Seeking an opportunity to develop technical skills and contribute to a dynamic IT environment.
            </p>
 
-    <
 
 
     <!-- ================= EDUCATION ================= -->
@@ -453,7 +470,7 @@ li {
         <h2>LEADERSHIP & COMMUNITY EXPERIENCE</h2>
 
         <p>
-            <strong>Founder – Haksiya Innovations</strong>
+            <strong>Founder – <a href="https://haksiyainnovationsofficial.github.io/" target="_blank" rel="noopener noreferrer">Haksiya Innovations</a></strong>
         </p>
 
         <ul>
@@ -462,6 +479,7 @@ li {
                 Founded Haksiya Innovations and worked on web development
                 and digital projects, applying technical and design skills
                 to create digital solutions.
+                
             </li>
 
         </ul>
@@ -472,4 +490,3 @@ li {
 
 </body>
 </html>
-```
