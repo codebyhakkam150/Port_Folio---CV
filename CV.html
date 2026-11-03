@@ -60,6 +60,10 @@ body {
     text-decoration: none;
 }
 
+.linkedin-link {
+    white-space: nowrap;
+}
+
 .contact a:hover {
     text-decoration: underline;
 }
@@ -181,10 +185,11 @@ li {
     .header {
         align-items: flex-start;
         gap: 8px;
+        flex-wrap: wrap;
     }
 
     .header-left {
-        flex: 1;
+        flex: 1 1 100%;
         min-width: 0;
         text-align: left;
     }
@@ -201,7 +206,7 @@ li {
     .qr-section {
         flex-shrink: 0;
         gap: 4px;
-        margin-left: 0;
+        margin: 0 auto;
     }
 
     .qr-box {
@@ -255,7 +260,8 @@ li {
 
                 <strong>LinkedIn:</strong>
                 <a href="https://www.linkedin.com/in/hakkam-espeek-310356359/"
-                   target="_blank">
+                   target="_blank"
+                   class="linkedin-link">
                     linkedin.com/in/hakkam-espeek-310356359
                 </a>
 
