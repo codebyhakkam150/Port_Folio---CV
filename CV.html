@@ -183,30 +183,36 @@ li {
     }
 
     .header {
-        align-items: flex-start;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: start;
         gap: 8px;
-        flex-wrap: wrap;
     }
 
     .header-left {
-        flex: 1 1 100%;
-        min-width: 0;
-        text-align: left;
+        display: contents;
     }
 
     .header-left h1 {
+        grid-column: 1;
+        grid-row: 1;
         font-size: 17px;
+        text-align: left;
     }
 
     .contact {
+        grid-column: 1 / -1;
+        grid-row: 2;
         font-size: 11px;
         overflow-wrap: anywhere;
     }
 
     .qr-section {
+        grid-column: 2;
+        grid-row: 1;
         flex-shrink: 0;
         gap: 4px;
-        margin: 0 auto;
+        margin: 0;
     }
 
     .qr-box {
@@ -259,6 +265,7 @@ li {
                 <br>
 
                 <strong>LinkedIn:</strong>
+                <br>
                 <a href="https://www.linkedin.com/in/hakkam-espeek-310356359/"
                    target="_blank"
                    class="linkedin-link">
