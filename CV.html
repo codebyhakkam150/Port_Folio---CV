@@ -42,6 +42,7 @@ body {
 
 .header-left {
     flex: 1;
+    order: 1;
 }
 
 .header-left h1 {
@@ -80,6 +81,7 @@ body {
     align-items: center;
     justify-content: center;
     margin-left: 20px;
+    order: 2;
 }
 
 .qr-box {
@@ -187,13 +189,10 @@ li {
     }
 
     .header {
-        display: flex;
-        align-items: start;
-        gap: 8px;
+        display: block;
     }
 
     .header-left {
-        flex: 1;
         min-width: 0;
     }
 
@@ -209,9 +208,14 @@ li {
     }
 
     .qr-section {
-        flex-shrink: 0;
+        float: right;
         gap: 4px;
-        margin: 0;
+        margin: 0 0 0 8px;
+    }
+
+    .linkedin-line {
+        white-space: nowrap;
+        font-size: 10px;
     }
 
     .qr-box {
@@ -239,34 +243,6 @@ li {
     <!-- ================= HEADER ================= -->
 
     <div class="header">
-
-        <div class="header-left">
-
-            <h1>Muhammed Hakkam</h1>
-            <br>
-            <div class="contact">
-                <div class="contact-line">Sammanthurai, Sri Lanka | 0765 322 150</div>
-                <div class="contact-line">
-                    <strong>Email:</strong>
-                    <a href="mailto:hakkam1100@gmail.com">hakkam1100@gmail.com</a>
-                </div>
-                <div class="contact-line">
-                    <strong>GitHub:</strong>
-                    <a href="https://github.com/codebyhakkam150" target="_blank">
-                        github.com/codebyhakkam150
-                    </a>
-                </div>
-                <div class="contact-line">
-                    <strong>LinkedIn:</strong>
-                    <a href="https://www.linkedin.com/in/hakkam-espeek-310356359/" target="_blank" class="linkedin-link">
-                        linkedin.com/in/hakkam-espeek-310356359
-                    </a>
-                </div>
-            </div>
-
-        </div>
-
-
         <!-- QR CODES -->
 
         <div class="qr-section">
@@ -297,6 +273,32 @@ li {
             </div>
 
         </div>
+
+        <div class="header-left">
+
+            <h1>Muhammed Hakkam</h1> 
+            <div class="contact">
+                <div class="contact-line">Sammanthurai, Sri Lanka | 0765 322 150</div>
+                <div class="contact-line">
+                    <strong>Email:</strong>
+                    <a href="mailto:hakkam1100@gmail.com">hakkam1100@gmail.com</a>
+                </div>
+                <div class="contact-line">
+                    <strong>GitHub:</strong>
+                    <a href="https://github.com/codebyhakkam150" target="_blank">
+                        github.com/codebyhakkam150
+                    </a>
+                </div>
+                <div class="contact-line linkedin-line">
+                    <strong>LinkedIn:</strong>
+                    <a href="https://www.linkedin.com/in/hakkam-espeek-310356359/" target="_blank" class="linkedin-link">
+                        linkedin.com/in/hakkam-espeek-310356359
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
 
     </div>
 
